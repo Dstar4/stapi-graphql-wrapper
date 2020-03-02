@@ -1,0 +1,20 @@
+type Query {
+  company: [Company]
+  animals: [Animal]
+  animal(id: String): Animal
+}
+
+type Company {
+  name: String
+  productionCompany: Boolean
+}
+
+type Animal {
+  uid: String
+  name: String
+  earthAnimal: Boolean
+  earthInsect: Boolean
+  avian: Boolean
+  canine: Boolean
+  feline: Boolean
+}
